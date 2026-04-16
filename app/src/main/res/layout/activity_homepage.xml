@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#111110">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:text="iStream Home"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="24dp" />
+
+
+        <WebView
+            android:id="@+id/webViewVideo"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/edtVideoUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Paste YouTube URL..."
+            android:textColorHint="#FFFFFF"
+            android:inputType="textUri"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#cc0000"
+            android:textStyle="bold"
+            android:text="Play"
+            android:layout_marginBottom="12dp" />
+
+
+
+        <Button
+            android:id="@+id/btnAddToPlaylist"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#b4a7d6"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:text="+ Add to Playlist"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnMyPlaylist"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#b4a7d6"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:text="My Playlist"
+            android:layout_marginBottom="12dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#ead1dc"
+            android:textColor="#990000"
+            android:layout_marginTop="62dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Logout" />
+
+    </LinearLayout>
+</ScrollView>
